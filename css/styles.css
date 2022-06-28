@@ -139,23 +139,35 @@ nav ul li i {
 @media (min-width: 491px) and (max-width: 740px) {
   .food-container {
     flex-direction: column;
+
+    padding: 20px;
   }
 
   header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 
     margin-bottom: 20px;
   }
 
+  .logo .circle-title {
+    width: 110px;
+    height: 110px;
+  }
+
   nav ul {
     display: flex;
+    justify-content: space-around;
   }
 
   nav ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    font-size: 1rem;
+    margin-top: 0;
+    margin-left: 1rem;
   }
 
   .food-content hr {

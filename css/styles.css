@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  /* font-family: "Fascinate", cursive;
+  font-family: "Indie Flower", cursive;
+  font-family: "Special Elite", cursive;
+  font-family: "Yellowtail", cursive; */
+}
+
+.food-container {
+  display: flex;
+
+  padding: 50px;
+}
+
+header {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.logo {
+}
+
+.logo .circle-title {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+
+  background-color: black;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Yellowtail", cursive;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+}
+
+nav ul li {
+  font-size: 1.1rem;
+  font-family: "Yellowtail", cursive;
+  font-weight: 600;
+  list-style: none;
+
+  color: aquamarine;
+
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+}
+
+nav ul li i {
+  font-size: 1.4rem;
+  color: black;
+}
+
+.food-content {
+  flex: 4;
+}
+
+.food-content .title-taste {
+  font-size: 2.5rem;
+  font-family: "Yellowtail", cursive;
+  font-weight: 600;
+}
+
+.food-content .desc-taste {
+  font-family: "Yellowtail", cursive;
+  font-size: 1.2rem;
+  color: gray;
+
+  margin-top: 10px;
+}
+
+.food-content hr {
+  width: 70%;
+  height: 5px;
+  margin: 20px 0;
+  border: none;
+
+  background-color: lightgray;
+}
+
+.food-content .details-taste {
+  width: 70%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-cake {
+  height: 100%;
+  width: 49%;
+  border: 2px solid lightgray;
+  padding: 10px;
+}
+
+.details-cake hr {
+  width: 100%;
+  height: 2px;
+}
+
+.cake-img {
+  height: 70%;
+}
+
+.cake-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cake-desc {
+  margin-top: 20px;
+}
+
+.cake-desc h1 {
+  color: aquamarine;
+  font-size: 1.3rem;
+}
+
+.cake-desc-content {
+  margin-top: 20px;
+}
+
+@media (min-width: 491px) and (max-width: 740px) {
+  .food-container {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food-content hr {
+    width: 100%;
+  }
+
+  .food-content .details-taste {
+    width: 100%;
+  }
+
+  .cake-img {
+    height: 50%;
+  }
+
+  .cake-desc h1 {
+    font-size: 1.1rem;
+  }
+
+  .cake-desc-content {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .food-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+
+  .logo .circle-title {
+    width: 100px;
+    height: 100px;
+
+    margin: 20px 0;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+
+  nav ul li i {
+    font-size: 0;
+    opacity: none;
+  }
+
+  .food-content .title-taste {
+    font-size: 2rem;
+  }
+
+  .food-content .desc-taste {
+    font-size: 1rem;
+  }
+
+  .food-content hr {
+    width: 100%;
+  }
+
+  .food-content .details-taste {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  .details-cake {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cake-desc h1 {
+    font-size: 1.2rem;
+  }
+
+  .cake-desc-content {
+    font-size: 0.9rem;
+  }
+}
